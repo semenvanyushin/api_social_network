@@ -107,6 +107,18 @@ POST /api/v1/posts/
 ```
 в body { "text": "string", "image": "string", "group": 0 }
 
+в ответе:
+```
+{
+    "id": 1,
+    "text": "string",
+    "image": "string",
+    "pub_date": "2022-09-21T18:29:15.252605Z",
+    "author": "string",
+    "group": 0
+}
+```
+
 Изменение поста:
 
 ```
@@ -114,12 +126,36 @@ PUT /api/v1/posts/{id}/
 ```
 в body { "text": "string", "image": "string", "group": 0 }
 
+в ответе:
+```
+{
+    "id": 1,
+    "text": "string",
+    "image": "string",
+    "pub_date": "2022-09-21T18:29:15.252605Z",
+    "author": "string",
+    "group": 0
+}
+```
+
 Изменение части поста:
 
 ```
 PATCH /api/v1/posts/{id}/
 ```
 в body { "text": "string", "image": "string", "group": 0 }
+
+в ответе:
+```
+{
+    "id": 1,
+    "text": "string",
+    "image": "string",
+    "pub_date": "2022-09-21T18:29:15.252605Z",
+    "author": "string",
+    "group": 0
+}
+```
 
 Удаление поста:
 
@@ -136,9 +172,27 @@ GET /api/v1/follow/
 ```
 в body {"user": "string", "following": "string"}
 
+в ответе:
+```
+[
+    {
+        "user": "string",
+        "following": "string"
+    }
+]
+```
+
 Подписка на автора:
 
 ```
 POST /api/v1/follow/
 ```
 в body {"following": "string"}
+
+в ответе:
+```
+{
+    "user": "string",
+    "following": "string"
+}
+```
