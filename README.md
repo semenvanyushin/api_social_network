@@ -141,8 +141,4 @@ GET /api/v1/follow/
 ```
 POST /api/v1/follow/
 ```
-<<<<<<< HEAD
 в body {"following": "string"}
-=======
-в body {"following": "string"}
->>>>>>> c46dab670b75e98e42edd3b7624ba14d58a18755
